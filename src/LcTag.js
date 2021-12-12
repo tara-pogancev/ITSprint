@@ -3,23 +3,23 @@ import lcAnkara from './lcAnkara.jpeg'
 
 const useStyles = makeStyles({
     tagDiv: {
-        width: '15%',
+        width: '35%',
         margin: '5% auto',
         alignItems: 'center'
     },
     tag: {
         margin: 'auto',
-        fontSize: 45,
+        fontSize: 40,
         color: 'darkred'
     }
   });
 
-const LcTag = () => {
+const LcTag = ({name}) => {
     const classes = useStyles();
     return(
         <div className={classes.tagDiv}>
             <h3 className={classes.tag} onClick={() => alert('LC Ankara')}>
-                LC Ankara
+                {name}
             </h3>
         </div>
     );

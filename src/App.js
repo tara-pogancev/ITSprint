@@ -5,10 +5,11 @@ import NavBar from './NavBar';
 import Body from './Body';
 
 function App() {
+  const name= 'Onur'
   return (
     <div>
-      <NavBar/>
-      <Body/>
+      <NavBar name={name}/>
+      <Body name={name}/>
     </div>
   );
 }

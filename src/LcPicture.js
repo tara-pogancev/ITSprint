@@ -3,7 +3,7 @@ import lcAnkara from './lcAnkara.jpeg'
 
 const useStyles = makeStyles({
     imgDiv: {
-        width: '30%',
+        width: '350px',
         margin: 'auto',
     },
     lcPicture: {
@@ -11,11 +11,11 @@ const useStyles = makeStyles({
     }
   });
 
-const LcPicture = () => {
+const LcPicture = ({lcPicture}) => {
     const classes = useStyles();
     return(
         <div className={classes.imgDiv}>
-            <img src={lcAnkara} alt="" srcset="" className={classes.lcPicture}  onMouseOver={() => alert('LC Ankara')}/>
+            <img src={lcPicture} alt="" srcset="" className={classes.lcPicture}/>
         </div>
     );
     

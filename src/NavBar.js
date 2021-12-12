@@ -19,12 +19,18 @@ const useStyles = makeStyles({
   });
 
 
-const NavBar = () => {
+const NavBar = ({name}) => {
     const classes = useStyles();
+
+    const handleClick = (event) => {
+        console.log(event.target.childNodes[0].data);
+        alert(event.target.childNodes[0].data);
+    };
+
     return(
         <div className={classes.navBar}>
-            <h3 className={classes.nameTag} onClick={() => alert('Onur')}>
-                Onur
+            <h3 className={classes.nameTag} onClick={(e) => handleClick(e)} val={name}>
+                {name}
             </h3>
         </div>
     );
