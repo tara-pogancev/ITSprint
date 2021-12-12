@@ -18,7 +18,7 @@ const LcTag = () => {
     const classes = useStyles();
     return(
         <div className={classes.tagDiv}>
-            <h3 className={classes.tag}>
+            <h3 className={classes.tag} onClick={() => alert('LC Ankara')}>
                 LC Ankara
             </h3>
         </div>

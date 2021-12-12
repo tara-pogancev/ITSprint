@@ -23,7 +23,7 @@ const NavBar = () => {
     const classes = useStyles();
     return(
         <div className={classes.navBar}>
-            <h3 className={classes.nameTag}>
+            <h3 className={classes.nameTag} onClick={() => alert('Onur')}>
                 Onur
             </h3>
         </div>

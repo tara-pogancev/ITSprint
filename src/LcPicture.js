@@ -15,7 +15,7 @@ const LcPicture = () => {
     const classes = useStyles();
     return(
         <div className={classes.imgDiv}>
-            <img src={lcAnkara} alt="" srcset="" className={classes.lcPicture}/>
+            <img src={lcAnkara} alt="" srcset="" className={classes.lcPicture}  onMouseOver={() => alert('LC Ankara')}/>
         </div>
     );
     
